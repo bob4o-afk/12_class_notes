@@ -1,2 +1,2 @@
-# 12_class_notes
+# 12 class notes
 Tutorial How To 12 class
