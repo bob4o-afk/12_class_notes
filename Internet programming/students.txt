@@ -1,0 +1,3 @@
+Valeri,6.0
+Bobi,4.0
+Pesho,4.0
