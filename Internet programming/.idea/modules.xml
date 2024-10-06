@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lection 1 - Intro - TCP/practice/InetAddress/InetAddress.iml" filepath="$PROJECT_DIR$/lection 1 - Intro - TCP/practice/InetAddress/InetAddress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Internet programming.iml" filepath="$PROJECT_DIR$/Internet programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lection 1 - Intro - TCP/practice/NetworkAdmin/NetworkAdmin.iml" filepath="$PROJECT_DIR$/lection 1 - Intro - TCP/practice/NetworkAdmin/NetworkAdmin.iml" />
+    </modules>
+  </component>
+</project>
