@@ -99,8 +99,20 @@ body {
     border-radius: 8px;
 }
 
+.elements{
+    display: grid;
+}
+.upper-part{
+    display: block;
+}
+
+.figure{
+    max-width: 200px;
+}
+
 .game-image {
-    max-width: 100%;
+    max-width: 250px;
+    max-height: 250px;
     border-radius: 5px;
 }
 

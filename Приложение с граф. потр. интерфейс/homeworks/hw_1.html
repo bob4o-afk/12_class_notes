@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="bg">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="images/games.png" type="image/png">
 </head>
+
 <body>
 
     <!-- Header with Navigation -->
@@ -17,7 +19,7 @@
                 <li><a href="#hero-section" class="nav-link"><i class="fas fa-home"></i> Начало</a></li>
                 <li><a href="#games-section" class="nav-link"><i class="fas fa-gamepad"></i> Игри</a></li>
                 <li><a href="#about-section" class="nav-link"><i class="fas fa-info-circle"></i> За нас</a></li>
-                <li><a href="#contact-section" class="nav-link"><i class="fas fa-envelope"></i> Контакт</a></li>                
+                <li><a href="#contact-section" class="nav-link"><i class="fas fa-envelope"></i> Контакт</a></li>
             </ul>
         </nav>
     </header>
@@ -35,11 +37,21 @@
         <h2 id="games-title" class="section-title">Нашите игри</h2>
         <div id="games-list" class="games-list">
             <article id="game1" class="game-item">
-                <img src="images/league.jpg" alt="Game 1" class="game-image"  style="width: 200px; height: auto;">
-                <h3 class="game-title">Лига</h3>
-                <p class="game-description">Лига е игра, която съсипва животи, но е много забавна - 5/10.</p>
-                <button class="game-btn play-btn"><i class="fas fa-play"></i> Играй сега</button>
-                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>                
+                <div class="elements">
+                    <div class="upper-part">
+                        <figure>
+                        <img src="images/league.jpg" alt="Game 1" class="game-image">
+                        </figure>
+                        <h3 class="game-title">Лига</h3>
+                    </div>
+                    <div class="description">
+                        <p class="game-description">Лига е игра, която съсипва животи, но е много забавна - 5/10.</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="game-btn play-btn"><i class="fas fa-play"></i> Играй сега</button>
+                    <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>
+                </div>
             </article>
 
             <article id="game2" class="game-item">
@@ -47,7 +59,7 @@
                 <h3 class="game-title">Фортнайн</h3>
                 <p class="game-description">Фортнайн е игра за деца - ако искаш да си дете препоръчвам!</p>
                 <button class="game-btn play-btn"><i class="fas fa-play"></i> Играй сега</button>
-                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>                
+                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>
             </article>
 
             <article id="game3" class="game-item">
@@ -55,7 +67,7 @@
                 <h3 class="game-title">Outlast</h3>
                 <p class="game-description">Horror игра - МНОГО ДОБРА!</p>
                 <button class="game-btn play-btn"><i class="fas fa-play"></i> Играй сега</button>
-                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>                
+                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>
             </article>
 
             <article id="game4" class="game-item">
@@ -63,7 +75,7 @@
                 <h3 class="game-title">Brawl Stars</h3>
                 <p class="game-description">Няма да коменитрам ама става - 4/10.</p>
                 <button class="game-btn play-btn"><i class="fas fa-play"></i> Играй сега</button>
-                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>                
+                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>
             </article>
 
             <article id="game5" class="game-item">
@@ -71,7 +83,7 @@
                 <h3 class="game-title">Clash Royale</h3>
                 <p class="game-description">Mega Giga Chad играта.</p>
                 <button class="game-btn play-btn"><i class="fas fa-play"></i> Играй сега</button>
-                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>                
+                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>
             </article>
 
             <article id="game6" class="game-item">
@@ -79,7 +91,7 @@
                 <h3 class="game-title">CS GO</h3>
                 <p class="game-description">1.6 better than anything.</p>
                 <button class="game-btn play-btn"><i class="fas fa-play"></i> Играй сега</button>
-                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>                
+                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>
             </article>
 
             <article id="game7" class="game-item">
@@ -87,7 +99,7 @@
                 <h3 class="game-title">Rocket League</h3>
                 <p class="game-description">Коли дето играя футбол.</p>
                 <button class="game-btn play-btn"><i class="fas fa-play"></i> Играй сега</button>
-                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>                
+                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>
             </article>
 
             <article id="game8" class="game-item">
@@ -95,7 +107,7 @@
                 <h3 class="game-title">Шах</h3>
                 <p class="game-description">Класика - който играе е много найс.</p>
                 <button class="game-btn play-btn"><i class="fas fa-play"></i> Играй сега</button>
-                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>                
+                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>
             </article>
 
             <article id="game9" class="game-item">
@@ -103,7 +115,7 @@
                 <h3 class="game-title">GTA</h3>
                 <p class="game-description">Крадеш, убиваш, пак крадеш - кефиш се.</p>
                 <button class="game-btn play-btn"><i class="fas fa-play"></i> Играй сега</button>
-                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>                
+                <button class="game-btn more-info-btn"><i class="fas fa-info"></i> Повече информация</button>
             </article>
         </div>
     </section>
@@ -126,16 +138,16 @@
         <form id="contact-form" class="contact-form" action="/submit" method="POST">
             <label for="name" class="form-label">Име и фамилия:</label>
             <input id="name" class="form-input" type="text" name="name" required minlength="5" autocomplete="name">
-            
+
             <label for="email" class="form-label">Имейл:</label>
             <input id="email" class="form-input" type="email" name="email" required autocomplete="email">
-            
+
             <label for="phone" class="form-label">Телефон:</label>
             <input id="phone" class="form-input" type="tel" name="phone" autocomplete="tel">
-            
+
             <label for="message" class="form-label">Вашето съобщение:</label>
             <textarea id="message" class="form-textarea" name="message" required></textarea>
-            
+
             <button id="submit-btn" class="submit-btn" type="submit">Изпрати</button>
         </form>
     </section>
@@ -146,4 +158,5 @@
     </footer>
 
 </body>
+
 </html>
