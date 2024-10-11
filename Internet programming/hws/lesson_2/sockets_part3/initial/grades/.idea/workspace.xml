@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9010f404-15f9-4a40-89e9-210f7196bd98" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../internet_programming" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/docs/lesson1/Урок1-упражнение.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/docs/lesson2/Упражнение_23.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/commands_part1/finalized/NSLookupFinal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/commands_part1/finalized/NetworkInterfaceFinal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/commands_part1/initial/NSLookupInitial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/commands_part1/initial/NetworkInterfaceInitial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/sockets_part3/finalized/simple_client_server/ClientFinal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/sockets_part3/finalized/simple_client_server/ServerFinal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/sockets_part3/initial/simple_client_server/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/sockets_part3/initial/simple_client_server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/streams_part2/finalized/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/streams_part2/finalized/StudentDiary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/streams_part2/finalized/StudentProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/streams_part2/initial/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/streams_part2/initial/StudentDiary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_1/streams_part2/initial/StudentProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/finalized/grades/StudentServerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/finalized/tcp_multi_client_server/ClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/finalized/tcp_multi_client_server/TCPClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/finalized/tcp_multi_client_server/TCPServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/grades/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/grades/StudentClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/grades/StudentProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/grades/StudentServer$ClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/grades/StudentServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/multicast/WeatherMulticastClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/multicast/WeatherMulticastServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/rock/RockPaperScissorsClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/rock/RockPaperScissorsServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/tcp_multi_client_server/TCPClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/tcp_multi_client_server/TCPServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/udp/UDPChatClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../out/production/Internet programming/lesson_2/sockets_part3/initial/udp/UDPChatServer.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2nHu571X2mSOc7TdXxvtGUbHpo4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/bobi0/Desktop/moi neshta lenovo/TUES/12_class/Internet programming/hws"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9010f404-15f9-4a40-89e9-210f7196bd98" name="Changes" comment="" />
+      <created>1728642135422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728642135422</updated>
+    </task>
+    <servers />
+  </component>
+</project>
