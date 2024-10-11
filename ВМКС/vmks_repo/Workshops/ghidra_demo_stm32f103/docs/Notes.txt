@@ -1,0 +1,23 @@
+Ghidra - STM32F103 demonstration
+
+MCU: STM32F103C8T6
+USART1 pins: PA10 - RX, PA9 - TX
+USART1 parameters: 2400 baud, 8 data bits, 1 stop bit, even parity check
+Ghidra language: ARM Cortex 32-bit little endian
+Flash base address: 0x08000000
+Flash memory size: 64 KiB (0x10000)
+RAM base address: 0x20000000
+RAM size: 20 KiB (0x5000)
+Vector table size: 268 B (0x10C)
+EXTI2_IRQHandler pointer at: 0x08000060 (25-th entry in vector table)
+EXTI2_IRQHandler at: 0x080009f8
+Reset_handler pointer at: 0x08000004 (second entry in vector table)
+Reset_handler at: 0x0800132c
+Main at: 0x080006a8
+Main loop at: 0x080006d2
+Button flag at: 0x20000028
+Button flag pointers at: 0x08000A18, 0x0800070C
+Conditional branch instruction encoding:
+	BEQ - 0xD0XX
+	BNE - 0xD1XX
+	where XX is an 8-bit immediate offset relative to the program counter

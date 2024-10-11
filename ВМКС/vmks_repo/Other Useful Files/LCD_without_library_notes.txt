@@ -1,0 +1,52 @@
+lcd.begin(COLS,ROWS,LCD_5x8DOTS)
+
+VMKS
+
+V = 0x56 = B 0101 0110
+M = 0x4D = B 0100 1101
+K = 0x4B = B 0100 1011
+S = 0x53 = B 0101 0011
+
+Steps to send command:
+0. Set RS
+1. Set Data value
+2. Wait >=100ns
+3. Set E high
+4. Wait >=300ns (can alse use this time to set Data value)
+5. Set E low
+6. Wait >=10ns
+7. Can change Data and repeat
+
+Steps to show text - from YouTube video:
+1. Set 4-bit mode and 1-line
+2. Clear display
+3. Return home
+4. Turn display on
+5. Send text in ASCII
+
+==================================================
+
+Steps to initialise the screen - from the library:
+1. Set 4-bit 2-line 5x8-dot mode
+2. Turn display-on, cursor-off, blinking-off
+3. Clear display
+4. Set autoincrement left-to-right, left-justified
+
+// When the display powers up, it is configured as follows:
+//
+// 1. Display clear
+// 2. Function set: 
+//    DL = 1; 8-bit interface data 
+//    N = 0; 1-line display 
+//    F = 0; 5x8 dot character font 
+// 3. Display on/off control: 
+//    D = 0; Display off 
+//    C = 0; Cursor off 
+//    B = 0; Blinking off 
+// 4. Entry mode set: 
+//    I/D = 1; Increment by 1 
+//    S = 0; No shift 
+//
+// Note, however, that resetting the Arduino doesn't reset the LCD, so we
+// can't assume that its in that state when a sketch starts (and the
+// LiquidCrystal constructor is called).

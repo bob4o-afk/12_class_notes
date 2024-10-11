@@ -1,0 +1,4 @@
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos_idf.html#
+https://www.freertos.org/features.html
+https://microcontrollerslab.com/esp32-dual-core-freertos-arduino-ide/
+ 
