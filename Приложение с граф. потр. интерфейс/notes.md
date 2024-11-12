@@ -14,3 +14,6 @@ srcset
 
 em - % от родилтеля
 rem - % от root
+
+Sentry
+https://sentry.io/vs/logging/
