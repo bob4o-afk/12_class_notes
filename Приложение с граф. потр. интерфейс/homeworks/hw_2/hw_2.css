@@ -300,10 +300,18 @@
     font-size: 16px;
 }
 
+.single__product--listing--wrapper {
+    max-height: 63px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, #fff 100%);
+}
+
 .single__product--listing--description {
     font-size: 14px;
     color: #666;
-    margin: 10px 0;
+    margin: 0;
+    line-height: 1.5;
 }
 
 .listing__variation {
