@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yt-logo {
+    position: relative;
+    background-color: red;
+    width: 300px;
+    height: 200px;
+    border-radius: 28px / 50%;
+    z-index: 1;
+}
+
+.white-triangle {
+    background-color: white;
+    clip-path: polygon(40% 30%, 40% 70%, 70% 50%);
+    width: 100%;
+    height: 100%;
+}
+
+.square1{
+    position: absolute;
+    background-color: red;
+    clip-path: ellipse(130px 20px);
+    transform: translate(5.5%, -35%);
+    width: 90%;
+    height: 20%;
+    z-index: 2;
+}
+
+.square2{
+    position: absolute;
+    background-color: red;
+    clip-path: ellipse(130px 20px);
+    transform: translate(5.5%, -63%);
+    width: 90%;
+    height: 20%;
+    z-index: 2;
+}

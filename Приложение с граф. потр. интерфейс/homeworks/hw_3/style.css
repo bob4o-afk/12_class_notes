@@ -1,0 +1,106 @@
+body {
+    font-family: Arial;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    background-color: #101010;
+}
+
+.navbar {
+    background-color: #101010;
+    overflow: hidden;
+}
+
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 16px 16px;
+    background-color: #101010;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+    background-color: #e50914e6;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #e50914e6;
+    width: 100%;
+}
+
+.subnav-content a {
+    color: white;
+    float: left;
+    padding: 16px 16px;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: #101010;
+}
+
+.subsubnav {
+    position: relative;
+    display: inline-block;
+    margin-left: -600px; 
+}
+
+.subsubnavbtn {
+    background-color: #e50914e6;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    width: auto;
+}
+
+.subsubnav a {
+    background-color: #e50914e6;
+}
+
+.subsubnav-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    background-color: #f44336;
+    width: 200px;
+    z-index: 2;
+}
+
+
+.subsubnav-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.subsubnav-content a:hover {
+    background-color: #eee;
+    color: #101010;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.subsubnav:hover .subsubnav-content {
+    display: block;
+}
