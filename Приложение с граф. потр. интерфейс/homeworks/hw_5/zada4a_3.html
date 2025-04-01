@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Търсене</title>
+</head>
+<body>
+
+  <h2>Търсене</h2>
+
+  <input type="text" id="searchInput" placeholder="Въведи дума за търсене" />
+  <button id="searchBtn">Търси</button>
+
+  <div id="textContent">
+    <p>Тя е вече с разбити мечти, тя не иска вече сълзи,<br>
+        чуе ли за любов, казва: "Боже, пази!"<br>
+        След поредния кофти любим, реже ги всичките до един,<br>
+        майната ти Св. Валентин.</p>
+        
+    <p><strong>Припев:</strong><br>
+        Сърцето й е лед, да мачка е на ред,<br>
+        ей такива като мен и като теб.<br>
+        Тя е наред.(x2)</p>
+        
+    <p>С други излиза ли, страдай си, дреме й,<br>
+        да си тръгне, остави я, ей такава направи я.<br>
+        Много ли те заболя, малко ли те изтърпя?<br>
+        Колко ми кажи, дето нарани, видя в очите й?</p>
+        
+    <p><strong>Припев:</strong></p>
+        
+    <p>Така я обичаше, от теб само плачеше,<br>
+        като чужда позна ли я? Ей такава направи я.<br>
+        Много ли те заболя, малко ли те изтърпя?<br>
+        Колко ми кажи, дето нарани, видя в очите й?</p>
+        
+    <p><strong>Припев:</strong></p>
+        
+    <p>След поредния кофти любим, реже ги всичките до един,<br>
+        майната ти Св. Валентин.</p>
+  </div>
+
+  <script>
+    const searchBtn = document.getElementById("searchBtn");
+    const input = document.getElementById("searchInput");
+    const content = document.getElementById("textContent");
+    
+    function escapeRegExp(str) {
+      return str.replace(/[.*+?^=!:${}()|\[\]\/\\]/g, '\\$&');
+    }
+
+    function removeMarks(node) {
+      const marks = node.querySelectorAll("mark");
+      marks.forEach(mark => {
+        const parent = mark.parentNode;
+        parent.replaceChild(document.createTextNode(mark.textContent), mark);
+        parent.normalize();
+      });
+    }
+
+    searchBtn.addEventListener("click", () => {
+      const searchTerm = input.value.trim();
+      if (!searchTerm) return;
+
+      const safeSearch = escapeRegExp(searchTerm);
+
+      removeMarks(content);
+
+      const regex = new RegExp(`(${safeSearch})`, "gi");
+
+      const Mark = (node) => {
+        if (node.nodeType === 3) {
+          const replaced = node.nodeValue.replace(regex, '<mark>$1</mark>');
+          if (replaced !== node.nodeValue) {
+            const wrapper = document.createElement("span");
+            wrapper.innerHTML = replaced;
+            node.replaceWith(...wrapper.childNodes);
+          }
+        } else if (node.nodeType === 1 && node.childNodes) {
+          node.childNodes.forEach(Mark);
+        }
+      };
+
+      content.childNodes.forEach(Mark);
+      document.getElementById("searchInput").value = "";
+    });
+  </script>
+
+</body>
+</html>

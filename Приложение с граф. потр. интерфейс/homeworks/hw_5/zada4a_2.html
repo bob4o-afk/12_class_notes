@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Тестче</title>
+  <style>
+    .correct { color: green}
+    .wrong { color: red}
+  </style>
+</head>
+<body>
+
+  <h2>Тестче</h2>
+  <form id="quizForm"></form>
+
+  <button id="checkBtn">Провери</button>
+
+  <p id="result"></p>
+
+  <script>
+    const questions = [
+      {
+        question: "Колко на меко?",
+        answers: ["4см", "50см", "3см"],
+        correct: 1
+      },
+      {
+        question: "Колко на твърдо?",
+        answers: ["8см", "100398843е32см", "14см"],
+        correct: 1
+      },
+      {
+        question: "Кой език НЕ струва (hint: JavaScript)?",
+        answers: ["JavaScript", "Python (не е Python, JS e)", "Java(close, ма не)"],
+        correct: 0
+      }
+    ];
+
+    const form = document.getElementById("quizForm");
+
+    questions.forEach((q, index) => {
+      const div = document.createElement("div");
+      div.classList.add("question");
+      div.innerHTML = `<p><strong>${q.question}</strong></p>`;
+
+      q.answers.forEach((answer, i) => {
+        const id = `q${index}_a${i}`;
+        div.innerHTML += `
+          <label for="${id}">
+            <input type="radio" name="q${index}" id="${id}" value="${i}">
+            ${answer}
+          </label>
+        `;
+      });
+
+      form.appendChild(div);
+    });
+
+    document.getElementById("checkBtn").addEventListener("click", () => {
+      let score = 0;
+
+      questions.forEach((q, index) => {
+        const selected = form.querySelector(`input[name="q${index}"]:checked`);
+        const allAnswers = form.querySelectorAll(`input[name="q${index}"]`);
+
+        allAnswers.forEach((input, i) => {
+          const label = input.parentElement;
+
+          label.classList.remove("correct", "wrong");
+
+          if (i === q.correct) {
+            label.classList.add("correct");
+          }
+
+          if (selected && parseInt(selected.value) === i && i !== q.correct) {
+            label.classList.add("wrong");
+          }
+        });
+
+        if (selected && parseInt(selected.value) === q.correct) {
+          score++;
+        }
+      });
+
+      document.getElementById("result").textContent = `Резултат: ${score} от ${questions.length}`;
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <style>
+    #taskTable {
+      width: 700px;
+    }
+
+    th {
+      text-align: center;
+      border: 1px solid #ddd;
+      width: 33%;
+    }
+
+    td {
+      text-align: center;
+      border: 1px solid #ddd;
+      word-wrap: break-word;
+      white-space: normal;
+      max-width: 200px;
+      width: 33%;
+    }
+
+    button.deleteBtn {
+      padding: 4px 8px;
+      cursor: pointer;
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Таблица със задачи</h2>
+
+  <form id="taskForm">
+    <input type="text" id="titleInput" placeholder="Заглавие" required />
+    <select id="prioritySelect">
+      <option value="Висок">Висок</option>
+      <option value="Среден">Среден</option>
+      <option value="Нисък">Нисък</option>
+    </select>
+    <button type="submit">Добави</button>
+  </form>
+
+  <label for="filter">Филтрирай по приоритет:</label>
+  <select id="filter">
+    <option value="Всички">Всички</option>
+    <option value="Висок">Висок</option>
+    <option value="Среден">Среден</option>
+    <option value="Нисък">Нисък</option>
+  </select>
+
+  <br><br>
+
+  <table id="taskTable">
+    <thead>
+      <tr>
+        <th>Заглавие</th>
+        <th>Приоритет</th>
+        <th>Действие</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    const form = document.getElementById("taskForm");
+    const titleInput = document.getElementById("titleInput");
+    const prioritySelect = document.getElementById("prioritySelect");
+    const filterSelect = document.getElementById("filter");
+    const tableBody = document.querySelector("#taskTable tbody");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const title = titleInput.value;
+      const priority = prioritySelect.value;
+
+      const row = document.createElement("tr");
+      row.setAttribute("data-priority", priority);
+
+      row.innerHTML = `
+        <td>${title}</td>
+        <td>${priority}</td>
+        <td><button class="deleteBtn">Изтрий</button></td>
+      `;
+
+      tableBody.appendChild(row);
+      titleInput.value = "";
+    });
+
+    tableBody.addEventListener("click", function (e) {
+      if (e.target.classList.contains("deleteBtn")) {
+        e.target.closest("tr").remove();
+      }
+    });
+
+    filterSelect.addEventListener("change", function () {
+      const selectedPriority = this.value;
+      const rows = tableBody.querySelectorAll("tr");
+
+      rows.forEach(row => {
+        if (selectedPriority === "Всички" || row.getAttribute("data-priority") === selectedPriority) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
