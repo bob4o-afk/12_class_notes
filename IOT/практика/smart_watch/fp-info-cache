@@ -1,4 +1,4 @@
-24735605853036833
+24737349430857125
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -9988,6 +9988,13 @@ DSUB-62-HD_Socket_Vertical_P2.41x1.98mm_MountingHoles
 0
 64
 63
+Connector_FFC
+Hirose_FH12-13S-0.5SH_1x13-1MP_P0.50mm_Horizontal
+Hirose FH12, FFC/FPC connector, FH12-13S-0.5SH, 13 Pins per row (https://www.hirose.com/product/en/products/FH12/FH12-24S-0.5SH(55)/), generated with kicad-footprint-generator
+connector Hirose FH12 horizontal
+0
+15
+14
 Connector_FFC-FPC
 Hirose_FH12-6S-0.5SH_1x06-1MP_P0.50mm_Horizontal
 Hirose FH12, FFC/FPC connector, FH12-6S-0.5SH, 6 Pins per row (https://www.hirose.com/product/en/products/FH12/FH12-24S-0.5SH(55)/), generated with kicad-footprint-generator

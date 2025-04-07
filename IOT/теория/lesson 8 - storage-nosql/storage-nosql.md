@@ -137,17 +137,17 @@ NoSQL:
 ACID VS BASE
 
 ACID:
-    - atomicity (неделимост, че транзакцията ще се изпълни - от и двете страни ще се изпълни), 
-    - consistency (имаме constrains, които лимитират заявките), 
+    - atomicity (неделимост - each statement in a transaction (to read, write, update or delete data) is treated as a single unit. Either the entire statement is executed, or none of it is executed), 
+    - consistency (имаме constrains, които лимитират заявките - ensures that transactions only make changes to tables in predefined, predictable ways), 
     - isolation (имаме последователност, върху едни и същи данни се изпъляват последователно заявките), 
-    - durability (ако се случи нещо може да се rollback-не):
-- RDBMS
+    - durability (ако се случи нещо може да се rollback-не - ensures that changes to your data made by successfully executed transactions will be saved, even in the event of system failure)
+- RDBMS - relational database management system (MySQL, PostgreSQL, Oracle, MS SQL Server и т.н.)
 - транзакции
 
 BASE:
     - basically available (винаги да има отговор)
     - soft state (състоянието може да се промени)
-    - eventually consistent (всички данни ще се синхронизират)
+    - eventually consistent (гарантира че данните ще са консистентни, но не веднага)
 
 - ползва се за NoSQL предимно
 

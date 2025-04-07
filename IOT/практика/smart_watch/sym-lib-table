@@ -1,4 +1,5 @@
 (sym_lib_table
   (version 7)
   (lib (name "circle_oled")(type "KiCad")(uri "${KIPRJMOD}/circle_oled.kicad_sym")(options "")(descr ""))
+  (lib (name "FH12-13S-0.5SH(55)")(type "KiCad")(uri "${KIPRJMOD}/FH12-13S-0.5SH(55).kicad_sym")(options "")(descr ""))
 )

@@ -1,0 +1,9 @@
+https://hub.allspice.io/AllSpiceMirrors/kicad-footprints/src/branch/master/Connector_FFC-FPC.pretty/Hirose_FH12-13S-0.5SH_1x13-1MP_P0.50mm_Horizontal.kicad_mod
+
+https://m.media-amazon.com/images/I/71D4E5DS-qL.jpg
+
+https://www.waveshare.com/1.28inch-touch-lcd.htm
+
+https://www.waveshare.com/wiki/1.28inch_Touch_LCD#Arduino_IDE_Installation_Tutorial
+
+https://erelement.com/shop/ips-1-28-inch-touch/
