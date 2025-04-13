@@ -287,37 +287,28 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Battery_Management:MAX17261xxWL"
+		(symbol "Battery_Management:LC709203FQH-01TWG"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -6.985 11.43 0)
+				(at -6.35 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MAX17261xxWL"
-				(at 8.255 11.43 0)
+			(property "Value" "LC709203FQH-01TWG"
+				(at 11.43 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Package_BGA:Maxim_WLP-9_1.595x1.415_Layout3x3_P0.4mm_Ball0.27mm_Pad0.25mm_NSMD"
-				(at 27.94 -20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX17261.pdf"
-				(at 0 2.54 0)
+			(property "Footprint" "Package_DFN_QFN:WDFN-8-1EP_4x3mm_P0.65mm_EP2.4x1.8mm"
+				(at 0 -13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -325,7 +316,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "5.1μA Multi-Cell Fuel Gauge with ModelGauge m5 EZ, WLP-9"
+			(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/lc709203f-d.pdf"
+				(at -1.27 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single LiPo battery fuel gauge, I2C, type 01, WDFN-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -334,7 +334,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Charge pump battery"
+			(property "ki_keywords" "Battery gauge I2C"
 				(at 0 0 0)
 				(effects
 					(font
@@ -343,7 +343,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Maxim*WLP*1.595x1.415*Layout3x3*P0.4mm*"
+			(property "ki_fp_filters" "WDFN*1EP*4x3mm*P0.65mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -352,7 +352,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "MAX17261xxWL_0_1"
+			(symbol "LC709203FQH-01TWG_0_1"
 				(rectangle
 					(start -7.62 10.16)
 					(end 7.62 -10.16)
@@ -365,18 +365,18 @@
 					)
 				)
 			)
-			(symbol "MAX17261xxWL_1_1"
-				(pin input line
-					(at -10.16 5.08 0)
+			(symbol "LC709203FQH-01TWG_1_1"
+				(pin bidirectional line
+					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "CELLX"
+					(name "SDA"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "C2"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -384,17 +384,17 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin input line
 					(at -10.16 0 0)
 					(length 2.54)
-					(name "TH"
+					(name "SCL"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "A1"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -402,17 +402,17 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin input line
 					(at -10.16 -5.08 0)
 					(length 2.54)
-					(name "CSN"
+					(name "TEST"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "A3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -423,14 +423,14 @@
 				(pin power_in line
 					(at 0 12.7 270)
 					(length 2.54)
-					(name "BATT"
+					(name "V_{DD}"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "B1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -441,32 +441,14 @@
 				(pin power_in line
 					(at 0 -12.7 90)
 					(length 2.54)
-					(name "GND/CSPL"
+					(name "V_{SS}"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "C3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 7.62 180)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A2"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -474,17 +456,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 10.16 5.08 180)
+				(pin passive line
+					(at 2.54 -12.7 90)
 					(length 2.54)
-					(name "SDA"
+					(name "EP"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "C1"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -495,14 +477,14 @@
 				(pin open_collector line
 					(at 10.16 2.54 180)
 					(length 2.54)
-					(name "ALRT"
+					(name "~{ALARMB}"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "B2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -510,17 +492,35 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 10.16 -5.08 180)
+				(pin output line
+					(at 10.16 -2.54 180)
 					(length 2.54)
-					(name "REG"
+					(name "T_{SW}"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "B3"
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "T_{SENSE}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4916,6 +4916,16 @@
 	)
 	(wire
 		(pts
+			(xy 16.51 100.33) (xy 16.51 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07973e0a-7ca4-476d-825f-111914b3f782")
+	)
+	(wire
+		(pts
 			(xy 200.66 59.69) (xy 200.66 36.83)
 		)
 		(stroke
@@ -5256,16 +5266,6 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 83.82) (xy 16.51 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9af3666d-40d4-4787-b30a-dbdd0f9eb27a")
-	)
-	(wire
-		(pts
 			(xy 175.26 86.36) (xy 175.26 93.98)
 		)
 		(stroke
@@ -5506,7 +5506,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 78.74) (xy 20.32 83.82)
+			(xy 20.32 76.2) (xy 20.32 83.82)
 		)
 		(stroke
 			(width 0)
@@ -5523,6 +5523,16 @@
 			(type default)
 		)
 		(uuid "dc4b7816-28f6-4267-8504-1f656e3e9a91")
+	)
+	(wire
+		(pts
+			(xy 16.51 83.82) (xy 16.51 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd709af1-4ddd-4a69-8831-239145657448")
 	)
 	(wire
 		(pts
@@ -7560,7 +7570,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 16.51 88.9 0)
+		(at 20.32 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7568,7 +7578,7 @@
 		(dnp no)
 		(uuid "68846978-821a-4670-b279-3f75935b6472")
 		(property "Reference" "R10"
-			(at 17.78 86.614 0)
+			(at 21.59 70.104 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7577,7 +7587,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 17.78 89.408 0)
+			(at 21.59 72.898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7586,7 +7596,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 14.732 88.9 90)
+			(at 18.542 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7595,7 +7605,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 16.51 88.9 0)
+			(at 20.32 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7604,7 +7614,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 16.51 88.9 0)
+			(at 20.32 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7688,6 +7698,97 @@
 			(project "smart_watch"
 				(path "/f6146d92-14fa-4b9b-a242-2fe338df02db"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Battery_Management:LC709203FQH-01TWG")
+		(at 204.47 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f32d75c-4a8e-423d-851f-302906415906")
+		(property "Reference" "U8"
+			(at 206.6133 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LC709203FQH-01TWG"
+			(at 206.6133 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:WDFN-8-1EP_4x3mm_P0.65mm_EP2.4x1.8mm"
+			(at 204.47 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/lc709203f-d.pdf"
+			(at 203.2 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single LiPo battery fuel gauge, I2C, type 01, WDFN-8"
+			(at 204.47 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "dba3187d-52b7-4cf2-a939-64c1a05782d1")
+		)
+		(pin "9"
+			(uuid "93dfffea-f4da-4c8d-b95f-beb668dbb5e1")
+		)
+		(pin "6"
+			(uuid "f3308b5d-b906-452d-9a74-ed108a70e9a7")
+		)
+		(pin "7"
+			(uuid "830658db-d549-4562-921a-6fa07a1864ce")
+		)
+		(pin "5"
+			(uuid "d5913c7a-589b-48d9-bd59-b7127f6e626b")
+		)
+		(pin "1"
+			(uuid "67a7674a-afe0-494b-ba21-7576b822453f")
+		)
+		(pin "3"
+			(uuid "798ada76-dfd3-4ba7-8d2f-ff64d30c11d5")
+		)
+		(pin "4"
+			(uuid "bd4b9ca6-1635-4b1e-aec3-3926f2c7a051")
+		)
+		(pin "2"
+			(uuid "7c91c057-05e4-4d2a-af89-3390bd279270")
+		)
+		(instances
+			(project ""
+				(path "/f6146d92-14fa-4b9b-a242-2fe338df02db"
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -8388,7 +8489,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 20.32 73.66 270)
+		(at 16.51 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8397,25 +8498,25 @@
 		(fields_autoplaced yes)
 		(uuid "a14715f3-78fd-4b27-a989-1734fa8bdcdc")
 		(property "Reference" "SW3"
-			(at 24.13 72.3899 90)
+			(at 17.78 93.9799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 24.13 74.9299 90)
+			(at 17.78 96.5199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
-			(at 25.4 73.66 0)
+			(at 11.43 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8424,7 +8525,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 25.4 73.66 0)
+			(at 11.43 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8433,7 +8534,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 20.32 73.66 0)
+			(at 16.51 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9849,7 +9950,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 16.51 92.71 0)
+		(at 16.51 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9858,7 +9959,7 @@
 		(fields_autoplaced yes)
 		(uuid "f012e1a0-3728-4b2d-8870-6c40924929c4")
 		(property "Reference" "#PWR029"
-			(at 16.51 99.06 0)
+			(at 16.51 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9867,7 +9968,7 @@
 			)
 		)
 		(property "Value" "GNDD"
-			(at 16.51 96.52 0)
+			(at 16.51 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9875,7 +9976,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 16.51 92.71 0)
+			(at 16.51 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9884,7 +9985,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 16.51 92.71 0)
+			(at 16.51 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9893,7 +9994,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 16.51 92.71 0)
+			(at 16.51 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10354,97 +10455,6 @@
 			(project "smart_watch"
 				(path "/f6146d92-14fa-4b9b-a242-2fe338df02db"
 					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Battery_Management:MAX17261xxWL")
-		(at 205.74 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fcf0f2c0-8128-490b-99bf-3498409f9461")
-		(property "Reference" "U2"
-			(at 207.8833 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MAX17261xxWL"
-			(at 207.8833 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_BGA:Maxim_WLP-9_1.595x1.415_Layout3x3_P0.4mm_Ball0.27mm_Pad0.25mm_NSMD"
-			(at 233.68 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX17261.pdf"
-			(at 205.74 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "5.1μA Multi-Cell Fuel Gauge with ModelGauge m5 EZ, WLP-9"
-			(at 205.74 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "B2"
-			(uuid "bba490ea-ba1e-43a5-9339-005121d47008")
-		)
-		(pin "B1"
-			(uuid "d2b8b6e2-69cc-4e45-a137-61a9a0e79947")
-		)
-		(pin "C2"
-			(uuid "56c447bb-01f5-4a1d-a294-f0796e97cdee")
-		)
-		(pin "C3"
-			(uuid "046bf759-e612-40a0-b437-e04c36123623")
-		)
-		(pin "A1"
-			(uuid "b0cb9953-4d2a-4419-b3ab-5f1d96410ae8")
-		)
-		(pin "A3"
-			(uuid "e628f6f7-1820-4101-8fd4-8470dd79863e")
-		)
-		(pin "C1"
-			(uuid "5b03b635-2afd-4d4f-906a-7a9ff66c676d")
-		)
-		(pin "A2"
-			(uuid "eb405063-fa82-4615-89b3-6da35300763d")
-		)
-		(pin "B3"
-			(uuid "ac0a054f-9f0c-4529-b068-eb0acbdafd01")
-		)
-		(instances
-			(project ""
-				(path "/f6146d92-14fa-4b9b-a242-2fe338df02db"
-					(reference "U2")
 					(unit 1)
 				)
 			)

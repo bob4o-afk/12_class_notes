@@ -7,3 +7,5 @@ https://www.waveshare.com/1.28inch-touch-lcd.htm
 https://www.waveshare.com/wiki/1.28inch_Touch_LCD#Arduino_IDE_Installation_Tutorial
 
 https://erelement.com/shop/ips-1-28-inch-touch/
+
+https://octopart.com/datasheet/lc709203fqh-01twg-onsemi-39002156?msclkid=30ed365e84fa15cd973e51a89dafee9c&utm_source=bing&utm_medium=cpc&utm_campaign=b_cpc_emea-bg_search_dsa_english_en_usd_all-categories&utm_term=semiconductors&utm_content=Discrete%20Semiconductors%20DSA
