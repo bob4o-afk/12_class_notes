@@ -7334,28 +7334,6 @@
 			)
 		)
 	)
-	(global_label "TX_2"
-		(shape output)
-		(at 54.61 111.76 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "43477f02-741d-4b48-8160-f7fca84a94d7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 61.9494 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VBUS"
 		(shape output)
 		(at 102.87 77.47 0)
@@ -7897,28 +7875,6 @@
 		(uuid "bf5779e4-9ec8-491c-bbbe-159706938428")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 119.2809 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RX_2"
-		(shape input)
-		(at 54.61 109.22 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ca5b433c-34f3-499d-b318-64a702de3d14")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.2518 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
